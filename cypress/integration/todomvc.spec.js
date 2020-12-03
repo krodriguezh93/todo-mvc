@@ -57,7 +57,7 @@ context("todo taks", () => {
         cy.get(':nth-child(1) > .view > .toggle').check()
         cy.get(':nth-child(2) > .view > .toggle').check()
         cy.get('.filters > :nth-child(2) > a').click()
-        cy.get('.todo').should('have.length', 4);
+        cy.get('.todo').should('have.length', 3);
     })
 
     it('Debe permitir ingresar varios todo y mostrarlos en el filtro de los completado', () => {
