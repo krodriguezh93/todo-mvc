@@ -27,10 +27,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
+    - name: Checkout
+      uses: actions/checkout@v1
+    # Install NPM dependencies, cache them correctly
+    # and run all Cypress tests
+    - name: Cypress run
+      uses: cypress-io/github-action@v2
