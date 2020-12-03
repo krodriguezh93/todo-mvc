@@ -4,7 +4,6 @@ context("todo taks", () => {
     beforeEach(() => {
         cy.visit('http://todomvc.com/examples/vue/')
         cy.get('.new-todo').as('input')
-
     })
 
     it('Debe agregar todo', () => {
